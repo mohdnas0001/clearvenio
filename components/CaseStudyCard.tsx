@@ -1,16 +1,20 @@
+'use client'
+import { useRouter } from 'next/navigation'
+
 interface CaseStudyProject {
-  id: string;
-  title: string;
-  company: string;
-  description: string;
-  image: string;
+  id: string
+  title: string
+  company: string
+  description: string
+  image: string
 }
 
 interface CaseStudyCardProps {
-  project: CaseStudyProject;
+  project: CaseStudyProject
 }
 
 export default function CaseStudyCard({ project }: CaseStudyCardProps) {
+  const router = useRouter()
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
       {/* Image */}
@@ -24,8 +28,15 @@ export default function CaseStudyCard({ project }: CaseStudyCardProps) {
       {/* Content */}
       <div className="p-6">
         <div className="flex justify-between items-start mb-4">
-          <h3 className="text-lg w-[60%] font-bold text-black">{project.title}</h3>
-          <button className="bg-gray-800 text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-black transition">
+          <h3 className="text-lg w-[60%] font-bold text-black">
+            {project.title}
+          </h3>
+          <button
+            onClick={() =>
+              router.push(`/case-studies/${project.title.toLocaleLowerCase()}`)
+            }
+            className="bg-gray-800 text-white px-4 py-1 rounded-full text-sm font-medium hover:bg-black transition"
+          >
             View
           </button>
         </div>
@@ -36,5 +47,5 @@ export default function CaseStudyCard({ project }: CaseStudyCardProps) {
         </p>
       </div>
     </div>
-  );
+  )
 }

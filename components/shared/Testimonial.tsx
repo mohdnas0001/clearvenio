@@ -1,8 +1,6 @@
 export default function Testimonial() {
   return (
     <section className="relative mb-10 h-[60vh]  w-full overflow-hidden bg-black">
-    
-
       {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center px-4">
         <div className="max-w-3xl text-center text-white">
@@ -22,5 +20,5 @@ export default function Testimonial() {
         </div>
       </div>
     </section>
-  );
+  )
 }

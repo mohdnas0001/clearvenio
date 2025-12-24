@@ -21,22 +21,31 @@ export default function Refund() {
                 Refunds are available under the following conditions:
               </p>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
-                <li>Request must be made within 30 days of service completion</li>
-                <li>You must demonstrate that deliverables didn't meet agreed specifications</li>
-                <li>We've been given reasonable opportunity to address concerns</li>
+                <li>
+                  Request must be made within 30 days of service completion
+                </li>
+                <li>
+                  You must demonstrate that deliverables didn't meet agreed
+                  specifications
+                </li>
+                <li>
+                  We've been given reasonable opportunity to address concerns
+                </li>
                 <li>Services were not used as intended</li>
               </ul>
             </div>
 
             <div>
               <h2 className="text-2xl font-bold mb-4">Refund Process</h2>
-              <p className="text-gray-700 mb-4">
-                To request a refund:
-              </p>
+              <p className="text-gray-700 mb-4">To request a refund:</p>
               <ol className="list-decimal list-inside space-y-2 text-gray-700">
                 <li>Contact us at refunds@clearvenio.com with details</li>
-                <li>Our team will review your request within 5 business days</li>
-                <li>If approved, refunds will be processed within 10 business days</li>
+                <li>
+                  Our team will review your request within 5 business days
+                </li>
+                <li>
+                  If approved, refunds will be processed within 10 business days
+                </li>
                 <li>Refunds will be issued to the original payment method</li>
               </ol>
             </div>
@@ -58,7 +67,7 @@ export default function Refund() {
               <h2 className="text-2xl font-bold mb-4">Questions?</h2>
               <p className="text-gray-700">
                 For any questions about our refund policy, please reach out to
-                our team at{" "}
+                our team at{' '}
                 <a
                   href="mailto:refunds@clearvenio.com"
                   className="text-black font-semibold hover:underline"
@@ -71,5 +80,5 @@ export default function Refund() {
         </div>
       </section>
     </div>
-  );
+  )
 }

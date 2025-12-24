@@ -1,33 +1,33 @@
-import AboutHero from "@/components/about/Hero";
-import Clarity from "@/components/Clarity";
-import Intro from "@/components/shared/Intro";
+import AboutHero from '@/components/about/Hero'
+import Clarity from '@/components/Clarity'
+import Intro from '@/components/shared/Intro'
 
 export default function About() {
   const team = [
     {
-      name: "Sarah Johnson",
-      role: "Founder & Creative Director",
+      name: 'Sarah Johnson',
+      role: 'Founder & Creative Director',
     },
     {
-      name: "Michael Chen",
-      role: "Strategy Lead",
+      name: 'Michael Chen',
+      role: 'Strategy Lead',
     },
     {
-      name: "Emily Rodriguez",
-      role: "Design Lead",
+      name: 'Emily Rodriguez',
+      role: 'Design Lead',
     },
     {
-      name: "David Park",
-      role: "Development Lead",
+      name: 'David Park',
+      role: 'Development Lead',
     },
-  ];
+  ]
 
   return (
-      <div>
-          <AboutHero />
-          <Intro />
-          <Clarity/>
-            {/* <section className="mt-20 bg-gray-50">
+    <div>
+      <AboutHero />
+      <Intro />
+      <Clarity />
+      {/* <section className="mt-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-20 md:py-32">
                 <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">About Us</h1>
@@ -102,5 +102,5 @@ export default function About() {
                 </div>
             </section> */}
     </div>
-  );
+  )
 }

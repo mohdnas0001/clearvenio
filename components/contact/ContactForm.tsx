@@ -1,42 +1,44 @@
-"use client";
+'use client'
 
-import { FormEvent, useState } from "react";
+import { FormEvent, useState } from 'react'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    fullName: "",
-    email: "",
-    reason: "",
-    otherReason: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
+    fullName: '',
+    email: '',
+    reason: '',
+    otherReason: '',
+    message: '',
+  })
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    e.preventDefault()
+    console.log('Form submitted:', formData)
+    setSubmitted(true)
     setTimeout(() => {
-      setSubmitted(false);
+      setSubmitted(false)
       setFormData({
-        fullName: "",
-        email: "",
-        reason: "",
-        otherReason: "",
-        message: "",
-      });
-    }, 3000);
-  };
+        fullName: '',
+        email: '',
+        reason: '',
+        otherReason: '',
+        message: '',
+      })
+    }, 3000)
+  }
 
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
-    const { name, value } = e.target;
+    const { name, value } = e.target
     setFormData((prev) => ({
       ...prev,
       [name]: value,
-    }));
-  };
+    }))
+  }
 
   return (
     <section className="bg-gray-900 text-white py-20 md:py-32 overflow-hidden">
@@ -88,44 +90,52 @@ export default function ContactForm() {
                   type="radio"
                   name="reason"
                   value="Web Design"
-                  checked={formData.reason === "Web Design"}
+                  checked={formData.reason === 'Web Design'}
                   onChange={handleChange}
                   className="w-5 h-5 accent-white cursor-pointer"
                 />
-                <span className="group-hover:text-gray-300 transition-colors">Web Design</span>
+                <span className="group-hover:text-gray-300 transition-colors">
+                  Web Design
+                </span>
               </label>
               <label className="flex items-center gap-3 cursor-pointer group">
                 <input
                   type="radio"
                   name="reason"
                   value="Mobile App Design"
-                  checked={formData.reason === "Mobile App Design"}
+                  checked={formData.reason === 'Mobile App Design'}
                   onChange={handleChange}
                   className="w-5 h-5 accent-white cursor-pointer"
                 />
-                <span className="group-hover:text-gray-300 transition-colors">Mobile App Design</span>
+                <span className="group-hover:text-gray-300 transition-colors">
+                  Mobile App Design
+                </span>
               </label>
               <label className="flex items-center gap-3 cursor-pointer group">
                 <input
                   type="radio"
                   name="reason"
                   value="Collaboration"
-                  checked={formData.reason === "Collaboration"}
+                  checked={formData.reason === 'Collaboration'}
                   onChange={handleChange}
                   className="w-5 h-5 accent-white cursor-pointer"
                 />
-                <span className="group-hover:text-gray-300 transition-colors">Collaboration</span>
+                <span className="group-hover:text-gray-300 transition-colors">
+                  Collaboration
+                </span>
               </label>
               <label className="flex items-center gap-3 cursor-pointer group">
                 <input
                   type="radio"
                   name="reason"
                   value="Others"
-                  checked={formData.reason === "Others"}
+                  checked={formData.reason === 'Others'}
                   onChange={handleChange}
                   className="w-5 h-5 accent-white cursor-pointer"
                 />
-                <span className="group-hover:text-gray-300 transition-colors">Others</span>
+                <span className="group-hover:text-gray-300 transition-colors">
+                  Others
+                </span>
               </label>
             </div>
           </div>
@@ -165,5 +175,5 @@ export default function ContactForm() {
         </form>
       </div>
     </section>
-  );
+  )
 }

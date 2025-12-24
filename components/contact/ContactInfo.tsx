@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from 'lucide-react'
 
 export default function ContactInfo() {
   return (
@@ -41,5 +41,5 @@ export default function ContactInfo() {
         </div>
       </div>
     </section>
-  );
+  )
 }

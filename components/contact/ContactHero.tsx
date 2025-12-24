@@ -6,9 +6,10 @@ export default function ContactHero() {
           Contact Us
         </h1>
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto animate-fadeInUp">
-          Get in touch with us today and let us help you with any questions or inquiries you may have
+          Get in touch with us today and let us help you with any questions or
+          inquiries you may have
         </p>
       </div>
     </section>
-  );
+  )
 }

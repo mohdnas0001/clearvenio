@@ -20,9 +20,15 @@ export default function Clarity() {
           </h1>
 
           {/* Divider */}
-          <div className="w-20 h-[2px] bg-white mx-auto mb-6 animate-scaleIn" style={{animationDelay: "0.2s"}} />
+          <div
+            className="w-20 h-[2px] bg-white mx-auto mb-6 animate-scaleIn"
+            style={{ animationDelay: '0.2s' }}
+          />
 
-          <p className="text-sm md:text-base text-white/90 leading-relaxed animate-fadeInUp" style={{animationDelay: "0.3s"}}>
+          <p
+            className="text-sm md:text-base text-white/90 leading-relaxed animate-fadeInUp"
+            style={{ animationDelay: '0.3s' }}
+          >
             Our driving force is helping brands stand out, stay consistent, and
             stay understood to the target audience. Whether you are launching,
             evolving, or rebuilding, we bring spark to your ideas and direction
@@ -31,5 +37,5 @@ export default function Clarity() {
         </div>
       </div>
     </section>
-  );
+  )
 }

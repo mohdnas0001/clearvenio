@@ -1,5 +1,5 @@
-import ServicesIntro from "@/components/ServicesIntro";
-import ServicesList from "@/components/ServicesList";
+import ServicesIntro from '@/components/ServicesIntro'
+import ServicesList from '@/components/ServicesList'
 
 export default function Services() {
   return (
@@ -7,5 +7,5 @@ export default function Services() {
       <ServicesIntro />
       <ServicesList />
     </div>
-  );
+  )
 }

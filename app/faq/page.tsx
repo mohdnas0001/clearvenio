@@ -1,56 +1,56 @@
-"use client";
+'use client'
 
-import { useState } from "react";
+import { useState } from 'react'
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   const faqs = [
     {
-      question: "What services does Clearvenio offer?",
+      question: 'What services does Clearvenio offer?',
       answer:
-        "We offer comprehensive brand and design services including brand strategy, visual identity design, web development, content creation, and digital marketing solutions tailored to your unique needs.",
+        'We offer comprehensive brand and design services including brand strategy, visual identity design, web development, content creation, and digital marketing solutions tailored to your unique needs.',
     },
     {
-      question: "How long does a typical project take?",
+      question: 'How long does a typical project take?',
       answer:
         "Project timelines vary based on scope and complexity. Most projects take 4-12 weeks from discovery to delivery. We'll provide a detailed timeline during our initial consultation.",
     },
     {
-      question: "What is your pricing structure?",
+      question: 'What is your pricing structure?',
       answer:
         "We offer flexible pricing models including project-based pricing, retainer agreements, and hourly consulting. We'll work with you to find a solution that fits your budget and needs.",
     },
     {
-      question: "Do you work with startups?",
+      question: 'Do you work with startups?',
       answer:
-        "Absolutely! We love working with startups and have experience helping early-stage companies establish strong brand foundations and grow.",
+        'Absolutely! We love working with startups and have experience helping early-stage companies establish strong brand foundations and grow.',
     },
     {
-      question: "Can you work with companies outside your location?",
+      question: 'Can you work with companies outside your location?',
       answer:
-        "Yes! We work with clients globally. Our team uses modern collaboration tools to work seamlessly with remote teams.",
+        'Yes! We work with clients globally. Our team uses modern collaboration tools to work seamlessly with remote teams.',
     },
     {
-      question: "What industries do you specialize in?",
+      question: 'What industries do you specialize in?',
       answer:
         "We've worked across multiple industries including tech, healthcare, finance, e-commerce, and more. We bring fresh perspectives and industry insights to every project.",
     },
     {
-      question: "Do you offer ongoing support after project completion?",
+      question: 'Do you offer ongoing support after project completion?',
       answer:
-        "Yes, we offer various support and maintenance packages to help you evolve your brand and optimize your results over time.",
+        'Yes, we offer various support and maintenance packages to help you evolve your brand and optimize your results over time.',
     },
     {
-      question: "How do we get started?",
+      question: 'How do we get started?',
       answer:
         "Simply fill out our contact form or reach out directly. We'll schedule a discovery call to understand your needs and discuss how we can help.",
     },
-  ];
+  ]
 
   const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
+    setOpenIndex(openIndex === index ? null : index)
+  }
 
   return (
     <div>
@@ -67,7 +67,10 @@ export default function FAQ() {
 
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             {faqs.map((faq, index) => (
-              <div key={index} className="border-b border-gray-200 last:border-b-0">
+              <div
+                key={index}
+                className="border-b border-gray-200 last:border-b-0"
+              >
                 <button
                   onClick={() => toggleFAQ(index)}
                   className="w-full px-8 py-6 text-left hover:bg-gray-50 transition flex justify-between items-center"
@@ -77,7 +80,7 @@ export default function FAQ() {
                   </h3>
                   <span
                     className={`text-2xl text-gray-600 transition-transform ${
-                      openIndex === index ? "rotate-180" : ""
+                      openIndex === index ? 'rotate-180' : ''
                     }`}
                   >
                     +
@@ -111,5 +114,5 @@ export default function FAQ() {
         </div>
       </section>
     </div>
-  );
+  )
 }

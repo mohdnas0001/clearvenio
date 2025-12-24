@@ -1,7 +1,7 @@
-import Hero from "@/components/Hero";
-import Intro from "@/components/Intro";
-import Expertise from "@/components/Expertise";
-import Clarity from "@/components/Clarity";
+import Hero from '@/components/Hero'
+import Intro from '@/components/Intro'
+import Expertise from '@/components/Expertise'
+import Clarity from '@/components/Clarity'
 
 export default function Home() {
   return (
@@ -11,5 +11,5 @@ export default function Home() {
       <Expertise />
       <Clarity />
     </div>
-  );
+  )
 }
