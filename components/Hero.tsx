@@ -2,19 +2,23 @@ export default function Hero() {
   return (
     <section
       className="text-white relative overflow-hidden"
-      style={{ backgroundImage: "url('/images/hero-section-bg.png')" }}
     >
       {/* Background overlay */}
       <div className="absolute inset-0 bg-black/10 z-10"></div>
 
-      {/* Background image placeholder - replace with actual image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center opacity-50"
-        style={{
-          backgroundImage:
-            "url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22%3E%3Crect fill=%22%23333%22 width=%221200%22 height=%22600%22/%3E%3C/svg%3E')",
-        }}
-      ></div>
+      {/* Background video */}
+      <video
+        className="absolute inset-0 h-full w-full object-cover opacity-50"
+        autoPlay
+        muted
+        loop
+        playsInline
+      >
+        <source
+          src="https://dtznwykaqduqyimyyshx.supabase.co/storage/v1/object/public/clearvenio/hero-section.mp4"
+          type="video/mp4"
+        />
+      </video>
 
       <div className="relative z-20 px-4 md:px-8 lg:px-16 py-20 md:py-32">
         <div className="max-w-4xl">
